@@ -50,3 +50,8 @@ jobs:
       - name: Run a test
         run: echo Running the test
 
+      
+      # Runs a single command using the runners shell
+      - name: Display the current folder
+        run: ls -l
+
