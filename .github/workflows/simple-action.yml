@@ -48,7 +48,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a test
-        run: echo Running the test ${{MY_REPOSITORY_SECRET}}
+        run: echo Running the test ${{secrets.MY_REPOSITORY_SECRET}}
 
       
       # Runs a single command using the runners shell
