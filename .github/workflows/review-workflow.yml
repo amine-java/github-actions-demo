@@ -1,0 +1,9 @@
+name: Review workflow to be applied 
+on: push
+
+jobs:
+  sayHi:
+   runs-on: ubuntu-latest
+   steps:
+   - run: echo 'Hello'
+  
