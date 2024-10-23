@@ -5,8 +5,13 @@ on:
     branches: [ "main" ]
 
 jobs:
-  sayHi:
+  afterReviewPR:
    runs-on: ubuntu-latest
    steps:
-   - run: echo 'Hello'
+    - name: Label approved pull requests
+      uses: abinoda/label-when-approved-action@v1.0.7
+      env:
+         APPROVALS: "1"
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         ADD_LABEL: "approved"
   
